@@ -43,6 +43,7 @@ auto main(int argc, char **argv) -> int
     std::uniform_int_distribution<> distrib(1, 100);
 
     std::for_each(data.begin(), data.end(), [&distrib, &gen](auto &n) { n = distrib(gen); });
+    fmt::print("The vector:\n[{}]\n", fmt::join(data, ", "));
 
     return 0; /* exit gracefully*/
 }
