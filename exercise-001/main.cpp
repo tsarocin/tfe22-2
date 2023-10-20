@@ -1,6 +1,9 @@
 #include <fmt/chrono.h>
 #include <fmt/format.h>
 
+#include <iostream>
+#include <random>
+
 #include "CLI/CLI.hpp"
 #include "config.h"
 
@@ -31,7 +34,15 @@ auto main(int argc, char **argv) -> int
     fmt::print("Hello, {}!\n", app.get_name());
     fmt::print("    value of count: {}!\n", count);
 
-    /* INSERT YOUR CODE HERE */
+    std::vector<uint32_t> data(count);
+    fmt::print("    Number of elements in vector: {}!\n", data.size());
+
+    // https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution
+    std::random_device rd;   // a seed source for the random number engine
+    std::mt19937 gen(rd());  // mersenne_twister_engine seeded with rd()
+    std::uniform_int_distribution<> distrib(1, 100);
+
+    std::for_each(data.begin(), data.end(), [&distrib, &gen](auto &n) { n = distrib(gen); });
 
     return 0; /* exit gracefully*/
 }
