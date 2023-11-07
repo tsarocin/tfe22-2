@@ -38,7 +38,8 @@ void VectorInt::resize( size_t count ) {
         entries_to_copy = count;
     }
     // copy the elements from the old buffer to the new one
-    for(int i=0; i<entries_to_copy;i++) {
+    for (int i = 0; i < entries_to_copy; i++)
+    {
         tmp[i] = mp_Data[i];
     }
 
