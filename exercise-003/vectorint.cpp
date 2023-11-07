@@ -50,3 +50,11 @@ void VectorInt::resize( size_t count ) {
 void VectorInt::push_back( const int& value ) {
 
 }
+
+void VectorInt::print() {
+    for (int i = 0; i < m_size; i++)
+    {
+       fmt::print("{}, ",mp_Data[i]);
+    }
+    fmt::print("\n");
+}

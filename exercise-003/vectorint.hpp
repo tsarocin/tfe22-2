@@ -11,6 +11,7 @@ public:
     size_t size() const;
     void resize( size_t count );
     void push_back( const int& value );
+    void print();
 
 private:
     int m_size;
