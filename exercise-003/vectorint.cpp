@@ -19,7 +19,7 @@ VectorInt::~VectorInt() {
 
 int& VectorInt::at( size_t pos ){
     if(pos < m_size) {
-        return mp_Data[m_size];
+        return mp_Data[pos];
     }
     // better use an exception!
     return m_null;
