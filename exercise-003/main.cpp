@@ -62,10 +62,16 @@ auto main(int argc, char **argv) -> int
         if (expected_value != data.at(i))
         {
             fmt::print("[failure]\n");
-            fmt::print("Value missmatch! Expected {} received {} at {}\n", expected_value, data.at(i),i);
+            fmt::print("Value mismatch! Expected {} received {} at {}\n", expected_value, data.at(i),i);
             return 1;
         }
     }
     fmt::print("[success]\n");
+
+    fmt::print("Testing the Push Back\n");
+    data.print();
+    data.push_back(12);
+    data.print();
+
     return 0; /* exit gracefully*/
 }
