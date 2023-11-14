@@ -32,7 +32,7 @@ size_t VectorInt::size() const {
 void VectorInt::resize( size_t count ) {
     // Create a new temporary buffer for the vector
     int* tmp = new int[count];
-    auto entries_to_copy{m_size}; // a variable to track the elements to copy    
+    auto entries_to_copy = m_size; // a variable to track the elements to copy    
     // The new buffer size is smaller than the current one
     if(count < m_size) {
         entries_to_copy = count;
@@ -49,7 +49,8 @@ void VectorInt::resize( size_t count ) {
     m_size = count;
 }
 void VectorInt::push_back( const int& value ) {
-
+    resize(m_size+1);
+    mp_Data[m_size-1] = value;
 }
 
 void VectorInt::print() {
