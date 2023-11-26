@@ -7,7 +7,6 @@ Ziel ist es eine Kommandozeilen Applikation zu entwickeln welche als persönlich
 - Mit dem Fahrrad Pendeln, dabei ist es vielleicht interessant zu wissen ob es in einem Zeitfenster regnet oder ob es empfehlenswert ist für eine entsprechende Beleuchtung zu sorgen.
 - Landwirtschaftliche Nutzung
 - Fußballtrainer, der nicht immer allen in der Whats-App Gruppe mitteilen möchte ob das Training stattfindet oder nicht.
-- Zeitreise in die Vergangenheit. Sie planen eine Urlaubsreise und möchten wissen wie wie dort das Wetter für den angegebenen Zeitraum in den letzten `n` Jahren gewesen ist.
 
 Für die Ausgabe eignet sich Markdown was zum Beispiel mittels [gum](https://github.com/charmbracelet/gum) visualisiert werden kann. Alternativ können Sie auch eine Alternative HTML Ausgabe verwenden.
 
