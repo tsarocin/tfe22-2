@@ -4,37 +4,69 @@
 
 Ziel ist es eine Kommandozeilen Applikation zu entwickeln welche als persönlicher Wetter Assistent verwendet werden kann. Dabei können die folgenden Aspekte von Interesse sein:
 
-- Mit dem Fahrrad Pendeln, dabei ist es interessant zu wissen ob es in einem Zeitfenster Regnet oder ob es empfehlenswert ist für eine entsprechende Beleuchtung zu sorgen.
-- Landwirtschaftliche Nutzung.
+- Mit dem Fahrrad Pendeln, dabei ist es vielleicht interessant zu wissen ob es in einem Zeitfenster regnet oder ob es empfehlenswert ist für eine entsprechende Beleuchtung zu sorgen.
+- Landwirtschaftliche Nutzung
+- Fußballtrainer, der nicht immer allen in der Whats-App Gruppe mitteilen möchte ob das Training stattfindet oder nicht.
 - Zeitreise in die Vergangenheit. Sie planen eine Urlaubsreise und möchten wissen wie wie dort das Wetter für den angegebenen Zeitraum in den letzten `n` Jahren gewesen ist.
 
-Für die Ausgabe eignet sich Markdown was zum Beispiel mittels [gum](https://github.com/charmbracelet/gum) visualisiert werden kann.
+Für die Ausgabe eignet sich Markdown was zum Beispiel mittels [gum](https://github.com/charmbracelet/gum) visualisiert werden kann. Alternativ können Sie auch eine Alternative Ausgabe verwenden.
+
+### Abfrage der Wetterdaten
+
+Die Abfrage der Wetterdaten können Sie über die API der [open-meteo.com](https://open-meteo.com/) realisieren.
+
+### Benachrichtigung
+
+Wählen Sie mindestens zwei Varianten zur Benachrichtigung, hier einige Beispiele:
+
+- X (auch als Twitter bekannt) oder Mastodon
+- E-Mail
+- What's App, Signal, Threema, Discord oder Telegram
+- MQTT
+- Twillo
+- IFTTT
+- ...
+
+Es muss keine Ende zu Ende Benachrichtigung stattfinden, es reicht das schematisch darzustellen. Wenn Sie es trotzdem schaffen erhalten Sie Zusatzpunkte.
+
+**WICHTIG:** Speichern Sie keine Passwörter oder Zugangs-Token nutzen Sie hierfür Methoden wie Konfigurationsdateien oder Umgebungsvariablen.
 
 ## Vorbereitung
 
-Jede Gruppe legt ein eigenes Repository and und fügt den Benutzer `graugans` zu diesem Repository hinzu. Das Repository ist auf Privat zu stellen. Damit die Gruppen nicht voneinander abschreiben können.
+Jede Gruppe legt ein eigenes Repository an und fügt den Benutzer `graugans` zu diesem Repository hinzu. Das Repository ist auf **Privat** zu stellen. Damit die Gruppen nicht voneinander abschreiben können.
 
 ## Bewertung
 
-### Quellcode
+### Quellcode 50%
 
 Bewertet wird die Qualität des Quellcodes hinsichtlich der folgenden Kriterien:
 
 - Lesbarkeit
 - Niedrige Fehlerrate
-- Verwendung der in der Vorlesung erlernten Konzepte
+- Verwendung der in der Vorlesung erlernte Konzepte
 
-### Dokumentation
+### Dokumentation 40%
 
 Neben der Implementierung spielt die Dokumentation Ihres Projektes eine Zentrale Rolle. Dazu Gehören die folgenden Aspekte:
 
-- Doxygen
+- Doxygen, ist nicht zwingend notwendig.
 - Projektdokumentation
 
-### Testing
+Die Projektdokumentation hat in **Markdown** zu erfolgen!
+Zusatzpunkte können Sie erlangen wenn Sie zum Beispiel Ihre Projektdokumentation mittels [MkDocs](https://www.mkdocs.org/) und GitHub Pages zu Verfügung stellen.
 
-Um sicherzustellen, dass der Quellcode die erwarten Ergbnisse liefert ist ein geeignetes Test set-up zu wählen.
+### Testing 10%
+
+Um sicherzustellen, dass der Quellcode die erwarten Ergebnisse liefert ist ein geeignetes Test set-up zu wählen. In Ihrem Codespace stehen Ihnen dafür das Framework [Catch2](https://github.com/catchorg/Catch2) zu Verfügung.
+
+### Zusatzpunkte
+
+Generell gilt, überraschen Sie mich. Besonders Kreative Ansätze und erweiterte Lösungen werden belohnt. Hier ein paar Vorschläge zum sammeln von Zusatzpunkten:
+
+- Nutzung der GitHub Actions zum automatisierten Bauen
+- Verwendung eines Tools wie [MkDocs](https://www.mkdocs.org/) zur Erzeugung einer Projektwebseite und deren Hosting mittels GitHub Pages.
+- Vollständige Benachrichtigung über einen Dienst Ihrer Wahl
 
 ## Abgabe
 
-Die Abgabe erfolgt bis spätestens 13.01.2023 um 00:00 Uhr. Über das spezifische Team Repository.
+Die Abgabe erfolgt bis spätestens 13.01.2023 um 00:00 Uhr. Über einen Pull-Request im spezifische Team Repository.
