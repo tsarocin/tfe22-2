@@ -20,6 +20,7 @@ Die Abfrage der Wetterdaten können Sie über die API der [open-meteo.com](https
 Wählen Sie mindestens zwei Varianten zur Benachrichtigung, hier einige Beispiele:
 
 - X (auch als Twitter bekannt) oder Mastodon
+- Microsoft Teams, Slack oder Mattermost
 - E-Mail
 - What's App, Signal, Threema, Discord oder Telegram
 - MQTT
