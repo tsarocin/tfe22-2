@@ -13,7 +13,9 @@ Für die Ausgabe eignet sich Markdown was zum Beispiel mittels [gum](https://git
 
 ### Abfrage der Wetterdaten
 
-Die Abfrage der Wetterdaten können Sie über die API der [open-meteo.com](https://open-meteo.com/) realisieren.
+Die Abfrage der Wetterdaten können Sie über die API der [open-meteo.com](https://open-meteo.com/) realisieren. Die Abfrage erfolgt in C++ mittels der Bibliothek [libcurl](https://curl.se/libcurl/), diese ist Teil des Codespaces sobald sie den Codespace aktualisiert haben.
+
+Sie finden Beispiele zur Verwendung von `libcurl`` auf der [Projektwebseite](https://curl.se/libcurl/c/example.html).
 
 ### Benachrichtigung
 
