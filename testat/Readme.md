@@ -17,6 +17,10 @@ Die Abfrage der Wetterdaten können Sie über die API der [open-meteo.com](https
 
 Sie finden Beispiele zur Verwendung von `libcurl`` auf der [Projektwebseite](https://curl.se/libcurl/c/example.html).
 
+#### JSON Verarbeitung
+
+Die `JSON` Daten der API können Sie mit der integrierten JSON Bibliothek von [Niels Lohmann](https://json.nlohmann.me/features/parsing/parse_exceptions/) verarbeiten.
+ 
 ### Benachrichtigung
 
 Wählen Sie mindestens zwei Varianten zur Benachrichtigung, hier einige Beispiele:
