@@ -9,7 +9,7 @@ Ziel ist es eine Kommandozeilen Applikation zu entwickeln welche als persönlich
 - Fußballtrainer, der nicht immer allen in der Whats-App Gruppe mitteilen möchte ob das Training stattfindet oder nicht.
 - Zeitreise in die Vergangenheit. Sie planen eine Urlaubsreise und möchten wissen wie wie dort das Wetter für den angegebenen Zeitraum in den letzten `n` Jahren gewesen ist.
 
-Für die Ausgabe eignet sich Markdown was zum Beispiel mittels [gum](https://github.com/charmbracelet/gum) visualisiert werden kann. Alternativ können Sie auch eine Alternative Ausgabe verwenden.
+Für die Ausgabe eignet sich Markdown was zum Beispiel mittels [gum](https://github.com/charmbracelet/gum) visualisiert werden kann. Alternativ können Sie auch eine Alternative HTML Ausgabe verwenden.
 
 ### Abfrage der Wetterdaten
 
@@ -20,7 +20,7 @@ Die Abfrage der Wetterdaten können Sie über die API der [open-meteo.com](https
 Wählen Sie mindestens zwei Varianten zur Benachrichtigung, hier einige Beispiele:
 
 - X (auch als Twitter bekannt) oder Mastodon
-- Microsoft Teams, Slack oder Mattermost
+- [Microsoft Teams](https://learn.microsoft.com/de-de/adaptive-cards/resources/tools), Slack oder Mattermost
 - E-Mail
 - What's App, Signal, Threema, Discord oder Telegram
 - MQTT
@@ -73,3 +73,11 @@ Generell gilt, überraschen Sie mich. Besonders Kreative Ansätze und erweiterte
 Die Abgabe erfolgt bis spätestens 13.01.2023 um 00:00 Uhr. Über einen Pull-Request im spezifische Team Repository. Erstellen Sie hierzu einen Branch `testat-001` analog zu folgender Graphik:
 
 ![](https://mermaid.ink/img/pako:eNqdkMEKwjAMhl-l5DxhXnsWNmEn9dhL7LJ1uLajSw9j7N2tiAgyRRYI5CfJ94fMoH1NIEG0HRcBByOqk1ROPEN7azv-Jq8BnTaCaWTkXZ7v_9xbxzSEHANt52hD-uYjrx1kKbS0xeLFtNi5D9rbRvA0kBTlsSirlJffcMggARKwTn-fH00FbMiSApnKmhqMPStQbkmjGNmfJ6dBcoiUQRxqZDp02Aa0IBvsR1ruc2aHwg?type=png)
+
+Sie entwickeln Ihre Features in separaten Branches welche Sie jeweils mittels Pull-Request in Ihren Branch `testat-001` mergen.
+
+**Wichtig:** Sie dürfen Ihren Branch `testat-001` auf keinen Fall in main mergen.
+
+### Disqualifikation
+
+Sollte eine oder mehrere Gruppen voneinander abschreiben, oder identischen Quellcode abliefern werden beide Gruppen disqualifiziert und das Testat gilt als nicht bestanden.
