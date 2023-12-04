@@ -68,6 +68,9 @@ add_subdirectory(exercise-004)
 # Examples
 add_subdirectory(example-001)
 
+# Testat
+add_subdirectory(testat)
+
 # templates
 add_subdirectory(templates)
 
